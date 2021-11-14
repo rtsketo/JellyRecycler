@@ -9,7 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
  * Date: 14, 11, 2021
  */
 
-class JellyRecycler(context: Context, attrs: AttributeSet?, defStyleAttr: Int) :
-    RecyclerView(context, attrs, defStyleAttr) {
+class JellyRecycler @JvmOverloads constructor(
+    context: Context,
+    attrs: AttributeSet? = null
+) : RecyclerView(context, attrs) {
     init { edgeEffectFactory = JellyEffect() }
 }
